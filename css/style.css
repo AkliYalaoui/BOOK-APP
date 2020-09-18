@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.table-responsive{
+  overflow-x: auto;
+}
+.form,
+.table{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.table{
+  border-collapse: collapse;
+  background-color: #fff;
+  width: 100%;
+  min-width: 400px;
+}
+.table-stripped thead{
+  background-color: #007bff;
+  color: #fff;
+}
+.table-stripped th,
+.table-stripped td{
+  padding: 10px;
+  border: 1px solid #fff;
+  text-align: center;
+}
+.table-stripped tbody tr:nth-child(odd){
+  background-color: #ddd;
+}
+.table-stripped tbody tr:nth-child(even) td{
+  border-color: #ddd;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+.form-control{
+  margin-top: 8px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.form-control:focus{
+  border-color: #007bff;
+}
+.alert{
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+.alert-danger{
+  background-color: #e0c2c5;
+  border: 1px solid #946569;
+  color: #5e1f1f;
+}
+.alert-success{
+  background-color: #b3e7b3;
+  color: #274027;
+  border: 1px solid #82d382;
+}
+.animate-alert{
+  animation-name: alerted;
+  animation-duration: .7s;
+  animation-timing-function: linear;
+}
+@keyframes alerted{
+  from{
+    transform: translateX(-100vw);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+.btn{
+  margin-top: 10px;
+  padding: 5px;
+  font-weight: 400;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.btn-block{
+  display: block;
+  padding: 10px;
+}
+.btn-primary{
+  background-color: #007bff;
+  color: #fff;
+}
+.btn-danger{
+  background-color: #c82333;
+  border: 1px solid #bd2130;
+  color: #fff;
+  text-decoration: none;
+}
+.text-primary{
+  color: #007bff;
+}
+.text-center{
+  text-align: center;
+}
+.display-4{
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.mt-4{
+  margin-top: 3rem !important;
+}
+.mt-5{
+  margin-top: 1.5rem;
+}
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+@media (min-width:768px){
+  .container{
+    width: 700px;
+  }
+}
+@media (min-width:992px){
+  .container{
+    width: 960px;
+  }
+}
+@media (min-width:1200px){
+  .container{
+    width: 1170px;
+  }
+}

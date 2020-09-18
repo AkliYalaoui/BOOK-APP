@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <script defer type="module" src="js/app.js"></script>
+</head>
+<body>
+  <div class="container mt-4">
+    <h1 class="display-4 text-center"><i class="fas fa-book-open text-primary"></i> My <span class="text-primary">List</span></h1>
+    <form id="book-form" class="form">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" id="title" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="author">Author</label>
+        <input type="text" id="author" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="isbn">ISBN</label>
+        <input type="text" id="isbn" class="form-control">
+      </div>
+      <div class="form-group">
+        <input type="submit" class="btn btn-primary btn-block" value="Add Book">
+      </div>
+    </form>
+    <div class="table-responsive">
+      <table class="table table-stripped mt-5">
+        <thead>
+            <tr>
+              <th>Title</th>
+              <th>Auhtor</th>
+              <th>ISBN</th>
+              <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
